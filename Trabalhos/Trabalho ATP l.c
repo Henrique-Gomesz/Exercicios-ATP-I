@@ -11,9 +11,9 @@ int main()
     {
         printf("%do. Curso\n", i+1);
         fflush(stdin);
-        gets(vetcursos[i])
+        gets(vetcursos[i]);
     }
-    for(i=0;i<TFC;I++)
+    for(i=0;i<TFC;i++)
     {
         printf("Resposta %da. questão:\n", i+1);
         scanf("%d", &vetgab[i]);
@@ -25,19 +25,19 @@ int main()
         scanf("%d", &ncand);
         while(ncand >0)
         {
-            qtdcand++;
+            qtdecand++;
             for(j=0;j<TFG;j++)
             {
                 printf("Resposta da %da. questão\n", j+1);
                 scanf("%d", vetresp[j]);
             }
-            printf("Nota da redação\n")
+            printf("Nota da redação\n");
             scanf("%d", &vetresp[TFG]);
             acertos=0;
             for(j=0;j<TFG;j++)
                 if(vetgab[j]==vetresp[j])
                     acertos++;
-            pontuacao=acerto/40+60+vetresp[TFG]*40/100;
+            pontuacao=acertos/40+60+vetresp[TFG]*40/100;
             printf("Num.candidato: %d, Curso: %d %s, pontuacao:%d\n", ncand,i+1,vercursos[i],pontuacao);
 
             printf("Num. Candidato:\n");
